@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="天幻网,FFSKY,SQUARECN,专题,圣剑传说,玛娜传奇,圣剑传说之玛娜传奇,legend of mana" />
+<meta name="description" content="　Square Enix的《圣剑传说》系列一直受到广大玩家的好评，现在该系列的最新作《圣剑传说 玛娜英雄》即将登陆NDS，本作是结合了即时战略和传统角色扮演的“新S·RPG游戏”，以飞空艇作为据点，召唤各种各样的怪兽来打到不断袭来的敌人。本作的主角是一名叫做Roger的少年，是PEDAN王国的居民，根据兵役义务从2年前加入了PEDAN的军队，接受了严格的训练，性格开朗，善于交际，并且十分擅长使用剑术和体术，对魔物十分仇视。" />
+<title>程序制作-圣剑传说 玛娜传奇(Legend of Mana)(LOM)-FFSKY天幻网专题站(www.ffsky.cn)</title>
+
+<script src="../www.ffsky.cn/s/j/ajaxpl.js" tppabs="http://www.ffsky.cn/s/j/ajaxpl.js" type="text/javascript"></script>
+<link href="main.css" tppabs="http://lom.ffsky.cn/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="showPL('8','LOM','1346',1);">
+<div id="wrapper">
+  <div id="header">
+    <h1>圣剑传说 玛娜传奇(Legend of Mana)(LOM)<br />程序制作</h1>
+    <ul class="skip">
+      <li><a href="#content" accesskey="c" title="accesskey: C">跳到内容(C)</a></li>
+      <li><a href="#navbar" accesskey="n" title="accesskey: N">跳到导航(N)</a></li>
+    </ul>
+    <script src="../www.ffsky.com/ff/up.js" tppabs="http://www.ffsky.com/ff/up.js" type="text/javascript"></script>
+  </div>
+  <div id="out-content">
+    <div id="content-box">
+      <div id="info"></div>
+      <div id="content"><!--专题内容开始--><body>
+<p>程序是机器人的核心，机器人只会依照加载的程序做出攻击，甚至连击。尽管通过旋转等操作可以放置许多程序，但机器人中只会使用其中的6种。</p>
+<p>程序总共有10种形状，不同材质的原料大约有500多种组合情况，大致是越高级的材料作出的程序越小，同时材质还决定了程序的效果加乘，最大加乘效果为9；程序的作用是由原料的类型决定的，以下为作用表：</p><br>
+<table width="450" border="1" align="center" bordercolor="#000000" style="text-align: center" style="font-size: 13">
+<tbody align=middle><tr> 
+<td colspan="4"   bgcolor="#FF9900"><strong>程序作用表</strong></td>
+</tr>
+<tr bgcolor="#000000"> 
+<td><font color="#FFFFFF">原料1词尾</td>
+<td><font color="#FFFFFF">原料2词尾</td>
+<td><font color="#FFFFFF">效果</td>
+<td><font color="#FFFFFF">打击范围</td>
+</tr>
+        
+<td colspan="4"><strong><font color="#CC3300">辅助攻击程序一览</strong></td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300">Flute<br>フルート</td>
+<td rowspan="2">   
+  <p><font color="#CC3300">Acid Beam<br>  魔贯砲</p>
+ </td>
+<td rowspan="2"><font color="#CC3300">1-6(全体) 
+  </td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Flute<br>フルート</td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300">Gauntlet<br>グローブ</td>
+<td rowspan="5"><font color="#CC3300">Barrier<br>バリア</td>
+<td rowspan="5"><font color="#CC3300">1</td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Gauntlet<br>グローブ</td>
+</tr>
+        
+<td><font color="#CC3300">Shield<br>盾</td>
+<td><font color="#CC3300">Gauntlet<br>グローブ</td>
+</tr>
+        
+<td><font color="#CC3300">Shield<br>盾</td>
+<td><font color="#CC3300">Hat<br>ハート</td>
+</tr>
+        
+<td><font color="#CC3300">Shield<br>盾</td>
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+</tr>
+        
+<td><font color="#CC3300">Flute<br>フルート</td>
+<td><font color="#CC3300"> Flute<br>フルート</td>
+<td><font color="#CC3300">Beam 
+              Shot<br>ビーム</td>
+<td><font color="#CC3300">全屏(全体)</td>
+</tr>
+        
+<td><font color="#CC3300"> Mantle<br>マントマント</td>
+<td><font color="#CC3300"> Pendant<br>ペンダント</td>
+<td rowspan="4"><font color="#CC3300">Bit 
+              Barrier<br>ビットバリア  
+              
+  </td>
+<td rowspan="4">  
+ <font color="#CC3300">1-3(环形群体) 
+</td>
+</tr>
+        
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+<td><font color="#CC3300">Mantle<br>マント</td>
+</tr>
+        
+<td><font color="#CC3300">Robe<br>ロープー</td>
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+</tr>
+        
+<td><font color="#CC3300">Robe<br>ロープー</td>
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+</tr>
+        
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+<td rowspan="3"><font color="#CC3300">Bit 
+              Beams</td>
+<td rowspan="3"><font color="#CC3300">1-3</td>
+</tr>
+        
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+</tr>
+        
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+</tr>
+        
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td rowspan="3"><font color="#CC3300">Bomber 
+              Shot<br>ボンバー</td>
+<td rowspan="3"><font color="#CC3300">3 
+              (随机)</td>
+</tr>
+        
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+</tr>
+        
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+</tr>
+        
+<td><font color="#CC3300">Boots<br>ブーツ</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td rowspan="4"><font color="#CC3300">Bowling 
+              Bomb<br>こそがしボム</td>
+<td rowspan="4"><font color="#CC3300">3</td>
+</tr>
+        
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+<td><font color="#CC3300">Boots<br>ブーツ</td>
+</tr>
+        
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+<td><font color="#CC3300">Shoes</td>
+</tr>
+        
+<td><font color="#CC3300">Shoes</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+</tr>
+        
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td><font color="#CC3300">Buster 
+              Launcher<br>波動砲</td>
+<td><font color="#CC3300">全屏(全体)</td>
+</tr>
+        
+<td><font color="#CC3300">Flail<br>ヌンチャク</td>
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+<td rowspan="4"><font color="#CC3300">Candy 
+              Drops<br>まんまるドロップ</td>
+<td rowspan="4"><font color="#CC3300">3(随机)</td>
+</tr>
+        
+<td><font color="#CC3300">Flail<br>ヌンチャク</td>
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+</tr>
+        
+<td><font color="#CC3300">Hammer<br>ハンマー</td>
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+</tr>
+        
+<td><font color="#CC3300">Hammer<br>ハンマー</td>
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+</tr>
+        
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td><font color="#CC3300">Flute<br>フルート</td>
+<td rowspan="2"><font color="#CC3300">Diffusion 
+              Beam<br>拡散ビーム</td>
+<td rowspan="2"><font color="#CC3300">1-4(全体)</td>
+</tr>
+        
+<td><font color="#CC3300">Robe<br>ロープー</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+<td><font color="#CC3300"> Doppelgangers<br>どっきりメカ</td>
+<td><font color="#CC3300">1-3(环形群体攻击)</td>
+</tr>
+        
+<td><font color="#CC3300">Bow<br>ボウ</td>
+<td><font color="#CC3300">Pendant<br>ペンダント</td>
+<td rowspan="2"><font color="#CC3300">Double 
+              Bits<br>Wビット</td>
+<td rowspan="2"><font color="#CC3300">1-3(全体)</td>
+</tr>
+        
+<td><font color="#CC3300">Bow<br>ボウ</td>
+<td><font color="#CC3300">Ring<br>リング/指輪</td>
+</tr>
+        
+<td><font color="#CC3300">Flute<br>フルート</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+<td><font color="#CC3300">Electric 
+              Charge<br>放電</td>
+<td><font color="#CC3300">1-2(环形群体)</td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300"> Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Energy 
+              Charge<br>チャージ</td>
+<td><font color="#CC3300">自身</td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300"> Armor<br>フルメイル</td>
+<td rowspan="4"><font color="#CC3300">Fireworks<br>花火ボンバー</td>
+<td rowspan="4"><font color="#CC3300">1-2(环形群体攻击)</td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+</tr>
+        
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+<td><font color="#CC3300">Flame 
+              Cyclone<br>旋風火炎放射</td>
+<td><font color="#CC3300">1-2(环形群体)</td>
+</tr>
+        
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td><font color="#CC3300">Flame 
+              Launcher<br>火炎放射</td>
+<td><font color="#CC3300">2-4(全体)</td>
+</tr>
+        
+<td><font color="#CC3300">Gauntlet<br>グローブ</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td rowspan="2"><font color="#CC3300">Immolation<br>ヤルフバーニング</td>
+<td rowspan="2"><font color="#CC3300">1-3</td>
+</tr>
+        
+<td><font color="#CC3300">Shield<br>盾</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+</tr>
+        
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td><font color="#CC3300">Flute<br>フルート</td>
+<td><font color="#CC3300">Meteor 
+              Shower<br>拡散 波動砲</td>
+<td><font color="#CC3300">3-4(环形群体)</td>
+</tr>
+        
+<td><font color="#CC3300">Harp<br>ハープ</td>
+<td><font color="#CC3300">Harp<br>ハープ</td>
+<td><font color="#CC3300">Missiles<br>ミサイル</td>
+<td><font color="#CC3300">1-6(全体)</td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td rowspan="2"><font color="#CC3300">Napalm 
+              Bomb<br>ナパームボーム</td>
+<td rowspan="2"><font color="#CC3300">1-4(两侧群体)</td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+</tr>
+        
+<td><font color="#CC3300">Gauntlet<br>グローブ</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td rowspan="4"><font color="#CC3300">Nuclear 
+              Explosion<br>核自爆<br>
+   </td>
+<td rowspan="4"><font color="#CC3300">1-2(环形群体)</td>
+</tr>
+        
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+<td><font color="#CC3300">Gauntlet<br>グローブ</td>
+</tr>
+        
+<td><font color="#CC3300">Shield<br>盾</td>
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+</tr>
+        
+<td><font color="#CC3300">Shield<br>盾</td>
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+</tr>
+        
+<td><font color="#CC3300">Harp<br>ハープ</td>
+<td><font color="#CC3300">Marimba<br>マリンバ</td>
+<td>   
+  <p><font color="#CC3300">Projectile Shot<br>
+     <font color="#CC3300">多弾頭ミサイル</p>
+ </td>
+<td><font color="#CC3300">1-6</td>
+</tr>
+        
+<td><font color="#CC3300">Drum<br>ドラム</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+<td><font color="#CC3300">Pulse 
+              Attack<br>パルスアタック</td>
+<td><font color="#CC3300">1-3(环形群体)</td>
+</tr>
+        
+<td><font color="#CC3300">Hat<br>ハート</td>
+<td><font color="#CC3300">Harp<br>ハープ</td>
+<td rowspan="2"><font color="#CC3300">Rocket 
+              Missile<br>ロケットミサイル</td>
+<td rowspan="2"><font color="#CC3300">1-4(全体)</td>
+</tr>
+        
+<td><font color="#CC3300">Helmet<br>ヘルム</td>
+<td><font color="#CC3300">Harp<br>ハープ</td>
+</tr>
+        
+<td><font color="#CC3300">Armor<br>フルメイル</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+<td rowspan="2"><font color="#CC3300">Scatter　Bombs<br>ばらまきボム</td>
+<td rowspan="2"><font color="#CC3300">1-2(环形全体随机)</td>
+</tr>
+        
+<td><font color="#CC3300">Hauberk<br>アーマー</td>
+<td><font color="#CC3300">Drum<br>ドラム</td>
+</tr>
+        
+<td><font color="#CC3300">Bow<br>ボウ</td>
+<td><font color="#CC3300">Flute<br>フルート</td>
+<td><font color="#CC3300">Wave 
+              Beam<br>ウェープビーム</td>
+<td><font color="#CC3300">1-6(全体)</td>
+</tr>
+        
+<td colspan="4"><font color="#006666"><strong>普通攻击程序一览</strong></td>
+</tr>
+        
+<td><font color="#006666">Knife<br>アクス/ダガー</td>
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td rowspan="3"><font color="#006666">Chain　Drill<br>チェンドリル</td>
+<td rowspan="3"><font color="#006666">1-2</td>
+</tr>
+        
+<td><font color="#006666">Spear<br>ランス</td>
+<td><font color="#006666">Glove<br>ゴローブ</td>
+</tr>
+        
+<td><font color="#006666">Staff<br>スダッフ</td>
+<td><font color="#006666">Glove<br>ゴローブ</td>
+</tr>
+        
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666"> Spear<br>ランス</td>
+<td rowspan="6"><font color="#006666">Chain 
+              Guillotine<br>チェーンギロチン<br>
+   </td>
+<td rowspan="6"><font color="#006666">1-2</td>
+</tr>
+        
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">Staff<br>スダッフ</td>
+</tr>
+        
+<td><font color="#006666"> Knife<br>アクス/ダガー</td>
+<td><font color="#006666">Axe<br>アクス</td>
+</tr>
+        
+<td><font color="#006666">Knife<br>アクス/ダガー</td>
+<td><font color="#006666">Sword<br>ソッド</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666"> Spear<br>ランス</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">Staff<br>スダッフ</td>
+</tr>
+        
+<td><font color="#006666">Knife<br>アクス/ダガー</td>
+<td><font color="#006666"> Knife<br>アクス/ダガー</td>
+<td rowspan="4"><font color="#006666">Chain 
+              Spear<br>チェンスビア</td>
+<td rowspan="4"><font color="#006666">1-2</td>
+</tr>
+        
+<td><font color="#006666">Spear<br>ランス</td>
+<td><font color="#006666">Spear<br>ランス</td>
+</tr>
+        
+<td><font color="#006666">Spear<br>ランス</td>
+<td><font color="#006666"> Staff<br>スダッフ</td>
+</tr>
+        
+<td><font color="#006666">Staff<br>スダッフ</td>
+<td><font color="#006666">Staff<br>スダッフ</td>
+</tr>
+        
+<td><font color="#006666">2H Axe<br>ベドルアックス</td>
+<td><font color="#006666">2H Axe<br>ベドルアックス</td>
+<td rowspan="3"><font color="#006666">Chainsaw<br>チェーンソー</td>
+<td rowspan="3"><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+<td><font color="#006666"> 2H Axe<br>ベドルアックス</td>
+</tr>
+        
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+</tr>
+        
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">2H Axe<br>ベドルアックス</td>
+<td rowspan="4"><font color="#006666">Chainsaw 
+              R<br>チェーンソー R</td>
+<td rowspan="4"><font color="#006666">1-4(全体)</td>
+</tr>
+        
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">2H Axe<br>ベドルアックス</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+</tr>
+        
+<td><font color="#006666">2H Axe<br>ベドルアックス</td>
+<td><font color="#006666">Mantle<br>マント</td>
+<td rowspan="4"><font color="#006666">Chainsaw 
+              Spin<br>チェーンソー回し</td>
+<td rowspan="4"><p align="center"><font color="#006666">1-2(全体)</p></td>
+</tr>
+        
+<td><font color="#006666">2H Axe<br>ベドルアックス<br>アクス</td>
+<td><font color="#006666">Robe<br>ロープー</td>
+</tr>
+        
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+<td><font color="#006666">Mantle<br>マント</td>
+</tr>
+        
+<td><font color="#006666">2H Sword<br>大剣/ソッド</td>
+<td><font color="#006666">Robe<br>ロープー</td>
+</tr>
+        
+<td><font color="#006666">Knife<br>アクス/ダガー</td>
+<td><font color="#006666">Harp<br>ハープ</td>
+<td rowspan="3"><font color="#006666">Drill 
+              Missiles<br>ドリルロケト</td>
+<td rowspan="3"><font color="#006666">全屏(全体)</td>
+</tr>
+        
+<td><font color="#006666">Staff<br>スダッフ</td>
+<td><font color="#006666">Harp<br>ハープ</td>
+</tr>
+        
+<td><font color="#006666">Spear<br>ランス</td>
+<td><font color="#006666">Harp<br>ハープ</td>
+</tr>
+        
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td><font color="#006666">Armor<br>フルメイル</td>
+<td rowspan="2"><font color="#006666">Dynamite 
+              Punch<br>爆裂バンチ</td>
+<td rowspan="2"><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td><font color="#006666">Hauberk<br>アーマー</td>
+</tr>
+        
+<td><font color="#006666">Bow<br>ボウ</td>
+<td><font color="#006666">Gauntlet<br>グローブ</td>
+<td rowspan="2"><font color="#006666">Electric 
+              Net<br>ネットショット</td>
+<td rowspan="2"><font color="#006666">1-3</td>
+</tr>
+        
+<td><font color="#006666">Bow<br>ボウ</td>
+<td><font color="#006666">Shield<br>盾</td>
+</tr>
+        
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">Guillotine<br>ギロチン</td>
+<td><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">Guillotine<br>ギロチン</td>
+<td><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">Guillotine<br>ギロチン</td>
+<td><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Axe<br>アクス</td>
+<td><font color="#006666">Drum<br>ドラム</td>
+<td rowspan="2"><font color="#006666">Hurricane 
+              Slash<br>竜巻ギロチン</td>
+<td rowspan="2"><font color="#006666">全屏(全体)</td>
+</tr>
+        
+<td><font color="#006666">Sword<br>ソッド</td>
+<td><font color="#006666">Drum<br>ドラム</td>
+</tr>
+        
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td><font color="#006666"> Knuckle 
+              Punch<br>ナックルバンチ</td>
+<td><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Bow<br>ボウ</td>
+<td><font color="#006666">Drum<br>ドラム</td>
+<td><font color="#006666">Machine 
+              Gun<br>マシンガン</td>
+<td><font color="#006666">全屏</td>
+</tr>
+        
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td><font color="#006666"> Harp<br>ハープ</td>
+<td><font color="#006666"> Rocket 
+              Punch<br>ロケトバンチ</td>
+<td><font color="#006666">全屏(全体)</td>
+</tr>
+        
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td rowspan="3"><font color="#006666">Rubber 
+              Hammer<br>ビコビコハンマー</td>
+<td rowspan="3"><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Hammer<br>ハンマー</td>
+</tr>
+        
+<td><font color="#006666">Bow<br>ボウ</td>
+<td><font color="#006666">Bow<br>ボウ</td>
+<td><font color="#006666">Shotgun<br>ショットガン</td>
+<td><font color="#006666">全屏</td>
+</tr>
+        
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td><font color="#006666">Hat<br>ハート</td>
+<td rowspan="4"><font color="#006666">Spike-Bomb 
+              Hail<br>ドゲ鉄球雨あられ</td>
+<td rowspan="4"><font color="#006666">1-2(环形全体随机)</td>
+</tr>
+        
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td><font color="#006666">Helmet<br>ヘルム</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Hat<br>ハート</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Helmet<br>ヘルム</td>
+</tr>
+        
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td><font color="#006666">Mantle<br>マント</td>
+<td rowspan="4"><font color="#006666">Spiked 
+              Boomerang<br>大車輪ドゲ鉄球</td>
+<td rowspan="4"><font color="#006666">1-6(全体)</td>
+</tr>
+        
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td><font color="#006666">Robe<br>ロープー</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Mantle<br>マント</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Robe<br>ロープー</td>
+</tr>
+        
+<td><font color="#006666">Glove<br>ゴローブ</td>
+<td><font color="#006666">Flail<br>ヌンチャク</td>
+<td rowspan="2"><font color="#006666">Spiked 
+              Punch<br>ドゲ鉄球アーパー</td>
+<td rowspan="2"><font color="#006666">1</td>
+</tr>
+        
+<td><font color="#006666">Hammer<br>ハンマー</td>
+<td><font color="#006666">Glove<br>ゴローブ</td>
+</tr>
+        
+<td colspan="4"><strong><font color="#003399">行动能力程序一览</strong></td>
+</tr>
+        
+<td><font color="#003399">Helmet<br>ヘルム</td>
+<td><font color="#003399">Hat<br>ハート</td>
+<td><font color="#003399">Float<br>空中待機</td>
+<td><font color="#003399">自身</td>
+</tr>
+        
+<td><font color="#003399">Hat<br>ハート</td>
+<td><font color="#003399">Hat<br>ハート</td>
+<td><font color="#003399">Halt<br>待機</td>
+<td><font color="#003399">不祥</td>
+</tr>
+        
+<td><font color="#003399">Boots<br>ブーツ</td>
+<td><font color="#003399">Harp</td>
+<td rowspan="2"><font color="#003399">Jet 
+              Dash<br>ロケッドダショ</td>
+<td rowspan="2"><font color="#003399">1-5(全体)</td>
+</tr>
+        
+<td><font color="#003399">Shoes</td>
+<td><font color="#003399">Harp</td>
+</tr>
+        
+<td><font color="#003399">Boots<br>ブーツ</td>
+<td><font color="#003399">Shoes 
+   </td>
+<td><font color="#003399"> Retreat<br>バックダッシュ</td>
+<td><font color="#003399">不祥</td>
+</tr>
+        
+<td><font color="#003399">Boots<br>ブーツ</td>
+<td><font color="#003399">Mantle<br>マント</td>
+<td rowspan="4"><font color="#003399">Spinning 
+              Blow<br>トゲボヂィスビン</td>
+<td rowspan="4"><font color="#003399">1(环形)</td>
+</tr>
+        
+<td><font color="#003399">Robe<br>ロープー</td>
+<td><font color="#003399">Boots<br>ブーツ</td>
+</tr>
+        
+<td><font color="#003399">Robe<br>ロープー</td>
+<td><font color="#003399">Shoes</td>
+</tr>
+        
+<td><font color="#003399">Shoes</td>
+<td><font color="#003399">Mantle<br>マント</td>
+</tr>
+        
+<td><font color="#003399">Mantle<br>マント</td>
+<td><font color="#003399">Mantle<br>マント</td>
+<td rowspan="3"><font color="#003399">Spiny 
+              Guard<br>ガードトゲボヂィ</td>
+<td rowspan="3"><font color="#003399">自身</td>
+</tr>
+        
+<td><font color="#003399">Robe<br>ロープー</td>
+<td><font color="#003399">Mantle<br>マント</td>
+</tr>
+        
+<td><font color="#003399">Robe<br>ロープー</td>
+<td><font color="#003399">Robe<br>ロープー</td>
+</tr>
+</table>
+<p>攻击范围注释：<br>
+        1为最近的敌人，6为最远的敌人<br>
+        群体 ：同时攻击多个敌人<br>
+        环形：攻击机器人四周的敌人<br>
+        随机：随机攻击某个敌人<br>
+        全屏：攻击所有处于同一水平位置的敌人<br>
+        两侧：攻击两侧的敌人<br>
+<br>
+</table><!--专题内容结束--></div>
+      <div id="comment" >
+      </div>
+    </div>
+    <div id="navbar">
+      <ul id="nav">
+        <li><a href="javascript:if(confirm('http://www.ffsky.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.ffsky.com/'" tppabs="http://www.ffsky.com/">[天幻首页]</a></li>
+        <li><a href="javascript:if(confirm('http://www.ffsky.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.ffsky.cn/'" tppabs="http://www.ffsky.cn/">[天幻专题]</a></li>
+        <li><a href="javascript:if(confirm('http://www.ffsky.cn/zhuantiDetail.aspx?ID=92  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.ffsky.cn/zhuantiDetail.aspx?ID=92'" tppabs="http://www.ffsky.cn/zhuantiDetail.aspx?ID=92"><strong>圣剑传说 玛娜传奇</strong></a></li>
+        <li><a href="Index-1.htm" tppabs="http://lom.ffsky.cn/Index.htm">专题首页</a></li>
+<li><a href="easystory.htm" tppabs="http://lom.ffsky.cn/easystory.htm">游戏简介</a></li>
+<li><a href="oprition.htm" tppabs="http://lom.ffsky.cn/oprition.htm">系统概述</a></li>
+<li><a href="sothy.htm" tppabs="http://lom.ffsky.cn/sothy.htm">流程攻略</a></li>
+<li><a href="encyclopedias.htm" tppabs="http://lom.ffsky.cn/encyclopedias.htm">完全图鉴</a><ul><li><a href="character.htm" tppabs="http://lom.ffsky.cn/character.htm">人物图鉴</a></li>
+<li><a href="af.htm" tppabs="http://lom.ffsky.cn/af.htm">AF图鉴</a></li>
+<li><a href="skill.htm" tppabs="http://lom.ffsky.cn/skill.htm">必杀技图鉴</a></li>
+<li><a href="weapons.htm" tppabs="http://lom.ffsky.cn/weapons.htm">武器图鉴</a></li>
+<li><a href="armor.htm" tppabs="http://lom.ffsky.cn/armor.htm">防具图鉴</a></li>
+<li><a href="instrument.htm" tppabs="http://lom.ffsky.cn/instrument.htm">乐器图鉴</a></li>
+<li><a href="products.htm" tppabs="http://lom.ffsky.cn/products.htm">水果图鉴</a></li>
+<li><a href="monsitem.htm" tppabs="http://lom.ffsky.cn/monsitem.htm">怪物掉落道具</a></li>
+<li><a href="ssser.htm" tppabs="http://lom.ffsky.cn/ssser.htm">BOSS图鉴</a></li>
+<li><a href="ddent.htm" tppabs="http://lom.ffsky.cn/ddent.htm">敌人图鉴</a></li>
+<li><a href="glome.htm" tppabs="http://lom.ffsky.cn/glome.htm">魔兵作成指南</a><ul><li><a href="gm_body.html" tppabs="http://lom.ffsky.cn/gm_body.html"> 机体制作</a></li>
+<li class="current"><a href="glome-logic.htm" tppabs="http://lom.ffsky.cn/glome-logic.htm">程序制作</a></li>
+<li><a href="glome-color.htm" tppabs="http://lom.ffsky.cn/glome-color.htm">机甲涂装</a></li>
+</ul></li>
+<li><a href="danye.htm" tppabs="http://lom.ffsky.cn/danye.htm">世界史</a></li>
+<li><a href="lands.htm" tppabs="http://lom.ffsky.cn/lands.htm">地点图鉴</a></li>
+</ul></li>
+<li><a href="pets.htm" tppabs="http://lom.ffsky.cn/pets.htm">牧场和果树园</a></li>
+<li><a href="7765.htm" tppabs="http://lom.ffsky.cn/7765.htm">武具打造</a></li>
+<li><a href="staff.htm" tppabs="http://lom.ffsky.cn/staff.htm">开发小组</a></li>
+<li><a href="ultimana.htm" tppabs="http://lom.ffsky.cn/ultimana.htm">真·玛纳</a></li>
+<li><a href="xino.htm" tppabs="http://lom.ffsky.cn/xino.htm">图片欣赏</a></li>
+<li><a href="javascript:if(confirm('http://bbs.ffsky.com/showforum-25.aspx  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://bbs.ffsky.com/showforum-25.aspx'" tppabs="http://bbs.ffsky.com/showforum-25.aspx" target="_blank" >玛娜论坛</a></li>
+
+        <li><strong>专题搜索</strong></li>
+        <li><form id="searchForm" action="http://www.ffsky.cn/zhuantiSearch.aspx" method="get" target="_blank"><input id="keyword" type="text" name="keyword" value="" size="10"/>    <select id="SAREA" name="SAREA">
+        <option value="main">正文</option>
+        <option value="comment">备注</option>
+        <option value="title">标题</option>
+    </select>  <br/>
+    				<input id="Submit1" type="submit" value="开始搜索本专题" />
+    				<input type="hidden" name="ID" value="92" />
+   						</form></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <p>&copy; 1999-2006 天幻网 FFSKY All rights reserved.</p>
+  <p><a href="javascript:if(confirm('http://www.ffsky.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.ffsky.com/'" tppabs="http://www.ffsky.com/">www.ffsky.com</a>(主站) | <a href="javascript:if(confirm('http://www.ffsky.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.ffsky.cn/'" tppabs="http://www.ffsky.cn/"> www.ffsky.cn</a>(专题)</p>
+  <script src="../www.ffsky.cn/counter.aspx-ID=92&PID=1346" tppabs="http://www.ffsky.cn/counter.aspx?ID=92&PID=1346" type="text/javascript"></script>
+</div>
+<script src="../www.google-analytics.com/urchin.js" tppabs="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-360630-3";
+urchinTracker();
+</script>
+</body>
+</html>

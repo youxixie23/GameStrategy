@@ -1,0 +1,196 @@
+html, body, #header h1, #nav, #nav ul, #comment h2, #comment ol, #comment h3, #comment p, .comment-page, #footer p {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	text-align: center;
+	font: 12px/1.6 Simsun, Verdana, sans-serif;
+	background: #231815 url("css/bg_img2.jpg")/*tpa=http://lom.ffsky.cn/css/bg_img2.jpg*/ repeat-y center top;
+	color: #000;
+}
+#wrapper {
+	width : 885px;
+	min-height: 100%;
+	margin: auto;
+	text-align: left;
+	background: url("css/bg_img1.jpg")/*tpa=http://lom.ffsky.cn/css/bg_img1.jpg*/ no-repeat center top;
+}
+* html #wrapper {
+	height: 100%;
+}
+#header {
+	background:url("css/img_ttl.jpg")/*tpa=http://lom.ffsky.cn/css/img_ttl.jpg*/ no-repeat center 7px;
+	height: 300px;
+	width: 885px;
+	float: right;
+	display: inline;
+	position: relative;
+	text-align: center;
+}
+#header h1 {
+	padding-top:5px;
+	font-size: 14px;
+	line-height: 20px;
+	position: absolute;
+	text-align: center;
+	bottom: -60px;
+	width:602px;
+	height:51px;
+	left: 243px;
+	color:#FF5B0F;
+	background:url("css/title_bg.gif")/*tpa=http://lom.ffsky.cn/css/title_bg.gif*/ no-repeat;
+}
+#header img {
+	display: none;
+	margin: auto;
+}
+#out-content {
+	padding: 0 0 70px 0px;
+}
+#out-content:after {
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+* html #out-content {
+	height: 1%;
+}
+#info {
+	min-height:21px;
+	height:21px;
+	line-height: 3;
+	text-align: center;
+	background:url("css/bg_entry_t.gif")/*tpa=http://lom.ffsky.cn/css/bg_entry_t.gif*/ no-repeat center top;
+}
+#navbar {
+	float: left;
+	background: url("css/bg_side_b.gif")/*tpa=http://lom.ffsky.cn/css/bg_side_b.gif*/ no-repeat center bottom;
+	width: 185px;
+	margin-left: 40px;
+	display: inline;
+	position: relative;
+	top: 5px;
+	letter-spacing:0px;
+	font-size: 13px;
+}
+#nav, #nav ul {
+	list-style: none;
+	/*background: #EFF7FF;*/
+	text-align: center;
+}
+#nav {
+	padding:120px 4px 16px 4px;
+	background: url("css/bg_side_t.png")/*tpa=http://lom.ffsky.cn/css/bg_side_t.png*/ no-repeat center top;
+}
+#nav li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+#nav strong {
+	display: block;
+	/*width: 100%;*/
+	color: white;
+	background-color:#FF5B0F;
+}
+#nav .current ul a {
+	background:none;
+	font-weight:normal;
+	color:#404040;
+}
+#nav a:hover, #nav .current a, #nav .current ul a:hover {
+	font-weight:bold;
+	background:#FCF1E6;
+	color:black;
+}
+#nav li {
+	position: relative;
+}
+#nav li li a{
+	background: white;
+	font-weight:normal;
+	color:#404040;
+}
+#nav ul {
+
+}
+#content-box {
+	float: right;
+	width: 602px;
+	margin-right: 40px;
+	margin-top: 70px;
+	display: inline;
+	overflow: visible !important;
+	overflow: hidden;
+	margin-bottom: 85px;
+	background:url("css/bg_entry_m.gif")/*tpa=http://lom.ffsky.cn/css/bg_entry_m.gif*/ repeat-y;
+}
+#content {
+}
+#footer {
+	height: 54px;
+	font: 12px/20px Verdana, Simsun, sans-serif;
+	margin: -54px auto 0;
+	width : 880px;
+	/*background: url(http://www.ffsky.cn/s/i/classic/logo_1.gif) no-repeat left bottom;*/
+}
+#footer a {
+	color: #000;
+}
+#footer p {
+	padding-left: 153px;
+}
+.skip {
+	display: none;
+}
+/* font style */
+#comment {
+	font-size: 12px;
+	color: #666;
+	padding-top: 20px;
+	background:url("css/bg_entry_b.gif")/*tpa=http://lom.ffsky.cn/css/bg_entry_b.gif*/ no-repeat center bottom;
+}
+#comment h2 {
+	font-size: 14px;
+	text-indent:20px;
+}
+#comment a {
+	color: Maroon;
+}
+#comment ol {
+	list-style: none;
+}
+#comment ol li {
+	border: 1px solid #ccc;
+	margin: 20px;
+	padding:10px;
+}
+#comment h3 {
+	font-size: 12px;
+	display: inline;
+}
+.comment-time {
+	display: inline;
+	margin-left: 24px;
+}
+#comment .comment-page {
+	text-align: right;
+	padding-right:20px;
+}
+#comment .post-area 
+{
+	padding:20px;
+}
+
+
+.hsplit{
+height:30px;
+background:url("css/line_entry_ttl.jpg")/*tpa=http://lom.ffsky.cn/css/line_entry_ttl.jpg*/ no-repeat center 1px;
+}
+
+.wrap{margin:auto; width:570px;}
